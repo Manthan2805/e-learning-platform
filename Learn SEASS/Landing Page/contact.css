@@ -1,0 +1,138 @@
+:root {
+  --main-color: #252E38;
+  --paragraph: #fff;
+  --headings: #F2BB13;
+  --font-light: #737880;
+  --highlights: #363E48;
+  --border: #92801C;
+  --main-font: 'Poppins', sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: var(--main-font);
+  }
+  .fas {
+    color:var(--paragraph);
+  }
+  .contactus {
+    width: 100%;
+    height: 95vh;
+    background-color: var(--main-color);
+    /* background-color: #b3cde0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container {
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 8px;
+    background-color: none;
+  }
+  .form-group {
+    background-color: var(--main-color);
+    width: 400px;
+    font-size: 20px;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid rgba(128, 128, 1 28, 0.199);
+    margin-top: 5px;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    /* border-radius: 8px; */
+    font-family: var(--main-font);
+    color: var(--main-color);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  button[type="submit"]:hover {
+    background-color: var(--border);
+  }
+  #status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  #status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+  }
+  #status.error {
+    background-color: rgb(240, 103, 61);
+    color: white;
+    animation: status 4s ease forwards;
+  }
+  @keyframes status {
+    0% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    90% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
+  header{
+    color: var(--headings);
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--main-color);
+  }
+.contactus p {
+  color: var(--headings);
+  letter-spacing: 2px;
+  text-align: center;
+}
+  input{
+    height: 100%;
+    width: 100%;
+    color: var(--paragraph);
+    font-size: 16px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid white;
+  }
+  textarea{
+    color: var(--paragraph);
+    border-radius: 5px;
+    font-family: var(--main-font);
+    background: none;
+    border: 1px solid white;;
+  }
+input {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1020px) {
+  .contactus {
+    height: 100vh;
+  }
+}

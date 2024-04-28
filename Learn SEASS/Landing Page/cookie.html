@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cookie CSS Example</title>
+    <style>
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+
+        .light-mode {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cookie CSS Example</h1>
+    <button onclick="toggleMode()">Toggle Mode</button>
+
+    <script>
+        // Function to toggle between light and dark mode
+        function toggleMode() {
+            var body = document.body;
+            if (body.classList.contains('dark-mode')) {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                // Set a cookie to remember the mode
+                document.cookie = "mode=light";
+            } else {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                // Set a cookie to remember the mode
+                document.cookie = "mode=dark";
+            }
+        }
+
+        // Check if a mode cookie exists and set the mode accordingly
+        window.onload = function () {
+            var modeCookie = getCookie('mode');
+            if (modeCookie === 'dark') {
+                document.body.classList.add('dark-mode');
+            } else {
+                document.body.classList.add('light-mode');
+            }
+        }
+
+        // Function to get a cookie value
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+    </script>
+</body>
+</html>
+<script>
+        // Function to toggle between light and dark mode
+        function toggleMode() {
+            var body = document.body;
+            if (body.classList.contains('dark-mode')) {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                // Set a cookie to remember the mode
+                document.cookie = "mode=light";
+            } else {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                // Set a cookie to remember the mode
+                document.cookie = "mode=dark";
+            }
+        }
+
+        // Check if a mode cookie exists and set the mode accordingly
+        window.onload = function () {
+            var modeCookie = getCookie('mode');
+            if (modeCookie === 'dark') {
+                document.body.classList.add('dark-mode');
+            } else {
+                document.body.classList.add('light-mode');
+            }
+        }
+
+        // Function to get a cookie value
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+    </script>

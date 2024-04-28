@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEASS | LEARN CSS</title>
+    <link rel="icon" type="image/x-icon" href="/Images/Seass (1).png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <nav class="navbar sticky">
+    <div class="content">
+      <div class="logo">
+        <img class="seass-logo" src="/home/manthan/Desktop/Learn SEASS/Images/finalseasss.png" alt="" />
+      </div>
+      <ul id="sidebar" class="menu-list nav nav-pills pull-right">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about-us">About</a></li>
+        <li>
+          <a class="feat" onclick="features()" href="#features">Features</a>
+        </li>
+        <li>
+          <a class="con" onclick="contactus()" href="#contactu">Contact</a>
+        </li>
+      </ul>
+      <div id="icon" class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <body>
+    <div class="banner">
+      <h1>START YOUR CODING JOURNEY</h1>
+      <p>The new way to improve your programming skills while having fun</p>
+      <a href="/home/manthan/Desktop/Learn SEASS/LEvels/Beginners/one.html"><button>GET STARTED</button></a>
+    </div>
+
+    <!-- What now -->
+    <div id="feature" class="feature-class">
+      <div class="left">
+        <h1>Practice & Learn the fun way</h1>
+        <div class="p1 p">
+          <h2>Practice pure code</h2>
+          <p>Learn new concepts by solving fun challenges in css.</p>
+        </div>
+        <div class="p2 p">
+          <h2>Learn the basics</h2>
+          <p>
+            Our approach has been designed to lead begineers to head start with
+            css.
+          </p>
+        </div>
+        <div class="p3 p">
+          <h2>Design your basic portfolio</h2>
+          <p>Create your basic portfolio website and get started</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="img"></div>
+      </div>
+    </div>
+
+    <!-- ABOUT US -->
+
+    <section id="about-us" class="about-us">
+      <div class="center-outer">
+        <div class="center-inner">
+          <div class="bubbles">
+            <h1>WE ARE SEASS</h1>
+            <a href="/home/manthan/Desktop/Learn SEASS/About_us/index.html"><button>LEARN MORE</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="purpose">
+      <h2>OUR PURPOSE</h2>
+      <p>
+        At Seass, our goal is to let beginners learn CSS <br />
+        and basic web designing by solving different levels,<br />
+        learn new concepts
+      </p>
+      <video src="/home/manthan/Desktop/Learn SEASS/Videos/bg.mp4" controls></video>
+    </section>
+
+    <div class="banner whatnow">
+      <h1>WHAT NOW?</h1>
+      <p>Unleash your inner developer and start coding</p>
+      <a href="/LEvels/one.html"><button>GET STARTED</button></a>
+    </div>
+    <!-- CONTACT US -->
+
+    <section id="contactus" class="contactus">
+      <header>Any Questions?</header>
+      <p>
+        Leave us a kind word (it's always a pleasure), ask us questions
+        <br />
+        or reach out for support.
+      </p>
+      <div class="container">
+        <form
+          action="https://formspree.io/f/mbjnqwrn"
+          method="POST"
+          id="my-form"
+        >
+          <div class="form-group">
+            <!-- <label for="firstName"> First Name</label> -->
+            <input
+              required
+              autocomplete="off"
+              type="text"
+              id="firstName"
+              placeholder="Firstname"
+              name="firstName"
+            />
+          </div>
+
+          <div class="form-group">
+            <!-- <label for="latsName">Last Name</label> -->
+            <input
+              autocomplete="off"
+              type="text"
+              id="lastName"
+              placeholder="Lastname"
+              name="lastName"
+            />
+          </div>
+
+          <div class="form-group">
+            <!-- <label for="email">Email</label> -->
+            <input
+              required
+              autocomplete="off"
+              type="email"
+              id="email"
+              placeholder="Email"
+              name="email"
+            />
+          </div>
+
+          <div class="form-group">
+            <!-- <label for="message">Message</label> -->
+            <textarea
+              required
+              name="message"
+              id="massage"
+              placeholder="Message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <button type="submit">SUBMIT</button>
+          <div id="status"></div>
+        </form>
+      </div>
+    </section>
+  </body>
+
+  <!-- Footer -->
+
+  <footer class="footer-distributed">
+    <div class="footer-left">
+      <img src="/home/manthan/Desktop/Learn SEASS/Images/finalseasss.png" />
+      <!-- <h3>SEA<span>SS</span></h3> -->
+
+      <p class="footer-links">
+        <a href="#">Home </a>
+        |
+        <a href="#about-us">About </a>
+        |
+        <a href="#features" >Features </a>
+        |
+        <a href="#contactu">Contact </a>
+      </p>
+
+      <p class="footer-company-name">© 2024 Learn SEASS</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+91 9372530295</p>
+      </div>
+
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><a>mshirwadkar.com</a></p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:learn.seass@gmail.com">learn.seass@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>About the company</span>
+        We offer training and skill of CSS, using interactive levels.
+      </p>
+      <div class="footer-icons">
+        <!-- <a href="https://github.com/nileshgawli/Learn-SEASS" target="_blank" class="sm github">
+          <img src="/Images/github-logo-silhouette-in-a-square.png" alt="">
+        </a> -->
+        <a href="https://www.instagram.com/manthan__2805._/" target="_blank" class="sm instagram">
+          <img src="/home/manthan/Desktop/Learn SEASS/Images/instagram (1).png" alt="">
+        </a>
+        <a href="https://twitter.com/manthanshirwadkar" target="_blank" class="sm twitter">
+          <img src="/home/manthan/Desktop/Learn SEASS/Images/twitter.png" alt="">
+        </i></a>
+        <a href="https://www.youtube.com/channel/UCDJLE5OFU_caQHZahUaz3sQ" target="_blank" class="sm youtube">
+          <img src="/home/manthan/Desktop/Learn SEASS/Images/youtube.png" alt="">
+        </i></a>
+        <a href="https://www.linkedin.com/in/manthan shirwadkar-99999699/" target="_blank" class="sm linkedin">
+          <img src="/home/manthan/Desktop/Learn SEASS/Images/linkedin.png" alt="">
+        </i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+  <script src="contact.js"></script>
+</html>

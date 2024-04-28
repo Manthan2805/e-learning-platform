@@ -1,0 +1,587 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+:root {
+  --main-color: #252e38;
+  --paragraph: #fff;
+  --headings: #f2bb13;
+  --font-light: #737880;
+  --highlights: #363e48;
+  --border: #92801c;
+  --heading-hightlight: #c7ae23;
+  --main-font: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  scroll-behavior: smooth;
+}
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 0px;
+}
+.content {
+  padding: 0 30px;
+}
+.seass-logo {
+  height: 60px;
+  width: 120px;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  transition: all 0.3s ease;
+  /* box-shadow: rgb(18, 18, 54) 0px 1px 2px 0px, rgb(31, 31, 54) 0px 1px 3px 1px; */
+}
+
+.navbar.sticky {
+  background: var(--main-color);
+  /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);  */
+}
+
+.navbar .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .menu-list {
+  display: inline-flex;
+}
+.menu-list li {
+  list-style: none;
+}
+.menu-list li a {
+  color: var(--paragraph);
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 40px;
+  padding-bottom: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  transition: all 0.05s ease-out;
+}
+.menu-list li a:hover,
+a:visited,
+a:active {
+  color: var(--headings);
+  border-bottom: 3px solid var(--headings);
+}
+
+.banner {
+  background: url("Screenshot\ \(65\).png") no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.whatnow {
+  background: url(https://static.codingame.com/assets/background_06.98565cb8.jpg) no-repeat;
+  opacity: 90%;
+}
+h1 {
+  color: var(--headings);
+  font-weight: bold;
+  font-size: 4em;
+  margin-bottom: 0px;
+}
+.banner > p {
+  text-align: center;
+  color: var(--paragraph);
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+button {
+  background: var(--headings);
+  color: var(--main-color);
+  font-size: 1.2em;
+  font-weight: 2px;
+  padding: 10px 35px 10px 35px;
+  border: none;
+  transition: background 0.2s;
+}
+button:hover {
+  background: var(--heading-hightlight);
+}
+.about {
+  padding: 30px 0;
+}
+.about .title {
+  font-size: 38px;
+  font-weight: 700;
+}
+.about p {
+  padding-top: 20px;
+  text-align: justify;
+}
+.icon {
+  /* color: #fff; */
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+/* ABOUT US */
+.about-us {
+  height: 100vh;
+  width: 100%;
+  background: url('https://cdn.pixabay.com/photo/2016/11/21/12/36/ocean-1845110_960_720.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.about-header {
+  text-align: center;
+  vertical-align: center;
+  font-size: 5rem;
+  color: pink;
+  position: absolute;
+}
+
+.purpose {
+  height: 75vh;
+  width: 100%;
+  background: var(--main-color);
+  color: var(--paragraph);
+  text-align: center;
+}
+.purpose h2{
+  letter-spacing: 1px;
+  padding: 50px 0 20px 0;
+}
+.purpose p {
+  letter-spacing: 1.5px;
+}
+.purpose video {
+  height: 300px;
+  width: 400px;
+}
+
+
+/* Footer */
+
+footer {
+  /* position: fixed;
+	bottom: 0; */
+  position: fixed;
+  top: 0;
+}
+
+.footer-distributed {
+  background-color: #2c292f;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 70px 60px 70px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px "Cookie", cursive;
+  margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img {
+  width: 30%;
+}
+
+.footer-distributed h3 span {
+  color: #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #e0ac1c;
+  text-decoration: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.sm img {
+  height: 30px;
+  width: 30px;
+  background: white;
+  padding: 0.9px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+/* What now */
+
+.feature-class {
+  width: 100%;
+  height: 92vh;
+  background-color: #b3cde0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
+.left {
+  /* background-color: black; */
+  height: 92vh;
+  width: 50%;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* text-align: center; */
+  font-weight: 300;
+  /* margin: 1rem 8rem; */
+}
+
+.left h1 {
+  font-size: 3.5rem;
+  margin: 5rem 8rem 3rem 8rem;
+  color: var(--main-color);
+}
+
+.p {
+  color: var(--headings);
+  color: var(--highlights);
+  text-align: start;
+  margin: 1rem 8rem;
+}
+.p h2 {
+  font-size: 32px;
+}
+.p p {
+  color: var(--main-color);
+  font-size: 18px;
+}
+.right {
+  /* background: blue; */
+  height: 92vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img {
+  height: 90%;
+  width: 90%;
+  border-radius: 20px;
+  background-image: url(/Images/features_bg.png);
+  background-repeat: round;
+}
+@media (max-width: 1455px) {
+  .left h1 {
+    font-size: 3rem;
+  }
+  .p h2 {
+    font-size: 30px;
+  }
+  .p p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1345px) {
+  .left h1 {
+    font-size: 3rem;
+  }
+  .p h2 {
+    font-size: 28px;
+  }
+  .p p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1300px) {
+  .feature-class{
+    flex-direction: column;
+    height: fit-content;
+  }
+.right{
+  display: none
+}
+.left{
+  width: 80%;
+}
+}
+@media (max-width: 900px) {
+  .left {
+    width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  body {
+    overflow-x: hidden;
+  }
+  .left {
+    height: 100vh;
+  }
+  .left h1 {
+    font-size: 2.5rem;
+  }
+  .p h2 {
+    font-size: 24px;
+  }
+  .p p {
+    font-size: 12px;
+  }
+}
+
+
+/* Media Queries */
+
+@media (max-width: 1230px) {
+  .content {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content {
+    padding: 0 30px;
+  }
+}
+@media (max-height: 800px) {
+  footer {
+    position: static;
+  }
+
+  header {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 868px) {
+  body.disabled {
+    overflow: hidden;
+  }
+  .icon {
+    display: block;
+  }
+  .icon.hide {
+    display: none;
+  }
+  .navbar .menu-list {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: var(--main-color);
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list {
+    left: 0%;
+  }
+  .navbar .menu-list li {
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a {
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 880px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
+/* @media (max-width: 380px) {
+  .seass-logo a{
+
+  }
+} */
+
+/* ABOUT US  */
+/* Non essential CSS - Just for example centering */
+
+/* html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  } */
+
+  .center-outer {
+  display: table;
+  width: 100%;
+  height: 100%;
+  }
+
+  .center-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  }
+
+  /* Essential CSS - Makes the effect work */
+
+  /* body {
+  background-color: #3498db;
+  } */
+
+  .bubbles {
+  display: inline-block;
+  font-family: arial;
+  position: relative;
+  }
+
+  .bubbles h1 {
+  position: relative;
+  letter-spacing: 1px;
+  font-size: 5rem;
+  word-spacing: 3px;
+  margin: 1em 0 0;
+  /* font-family: 'Luckiest Guy', cursive; */
+  font-family: var(--main-font);
+  color: white;
+  z-index: 2;
+  }
+
+  .individual-bubble {
+  position: absolute;
+  border-radius: 100%;
+  bottom: 10px;
+  background-color: #fff;
+  z-index: 1;
+  }
